@@ -1,0 +1,5 @@
+{"level":"info","message":"Hello from aquisitions","service":"aquisitions-api","timestamp":"2026-02-18T21:03:37.348Z"}
+{"level":"info","message":"::1 - - [18/Feb/2026:21:03:37 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\"","service":"aquisitions-api","timestamp":"2026-02-18T21:03:37.358Z"}
+{"level":"info","message":"::1 - - [18/Feb/2026:21:03:37 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\"","service":"aquisitions-api","timestamp":"2026-02-18T21:03:37.573Z"}
+{"level":"info","message":"User registered successfully: john@example.com","service":"aquisitions-api","timestamp":"2026-02-21T20:54:29.489Z"}
+{"level":"info","message":"::1 - - [21/Feb/2026:20:54:29 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 76 \"-\" \"curl/8.7.1\"","service":"aquisitions-api","timestamp":"2026-02-21T20:54:29.492Z"}
