@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      target: production
+    ports:
+      - '${PORT:-3000}:${PORT:-3000}'
+    env_file:
+      - .env.production
+    restart: unless-stopped

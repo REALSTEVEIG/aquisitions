@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log*
+
+.env
+.env.*
+
+.git
+.gitignore
+
+logs
+*.log
+
+.neon_local
+
+AGENTS.md
+DOCKER.md
+README.md
