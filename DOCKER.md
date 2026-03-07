@@ -40,7 +40,7 @@ docker compose -f docker-compose.dev.yml up --build
 This starts two services:
 
 | Service      | Description                                                                 |
-|--------------|-----------------------------------------------------------------------------|
+| ------------ | --------------------------------------------------------------------------- |
 | `neon-local` | Neon Local proxy — creates an ephemeral branch on startup, deletes on stop. |
 | `app`        | The Node.js application with hot-reload via `node --watch`.                 |
 
@@ -98,10 +98,10 @@ docker compose -f docker-compose.prod.yml logs -f app
 
 ## How `DATABASE_URL` switches between environments
 
-| Environment | `DATABASE_URL` source                              | Neon Local? |
-|-------------|-----------------------------------------------------|-------------|
+| Environment | `DATABASE_URL` source                               | Neon Local? |
+| ----------- | --------------------------------------------------- | ----------- |
 | Development | Set in `docker-compose.dev.yml` → `neon-local:5432` | Yes         |
-| Production  | Set in `.env.production` → Neon Cloud URL            | No          |
+| Production  | Set in `.env.production` → Neon Cloud URL           | No          |
 
 In development, the app detects `NEON_LOCAL=true` and configures the `@neondatabase/serverless` driver to route HTTP queries through the Neon Local proxy instead of the cloud endpoint. In production, the driver connects directly to Neon Cloud as usual.
 
